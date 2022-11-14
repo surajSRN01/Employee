@@ -1,0 +1,21 @@
+
+server:
+  port: 8680
+
+spring:
+  h2:
+    console:
+      enabled: true
+    
+    
+  application:
+    name: Employee
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    password: 1234
+    url: jdbc:mariadb://localhost:3306/employeeservice
+    username: root  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
